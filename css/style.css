@@ -1,0 +1,651 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: black;
+}
+
+@font-face{
+    font-family: "jost";
+    src: url(../typo/Jost-400-Book.otf) format("opentype");
+}
+
+@font-face{
+    font-family: "disclaimer";
+    src: url(../typo/Disclaimer-Classic.otf) format("opentype");
+}
+
+.display-flex{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+}
+
+.column{
+    flex-direction: column;
+}
+
+.align-self{
+    align-self: center;
+}
+
+.align-center {
+    align-items: center;
+}
+
+.Titre{
+    color: #EB8221;
+    font-family: Disclaimer;
+    letter-spacing: 20px;  
+}
+
+p{
+    font-family:"jost" ;
+}
+
+.margin-t{
+    margin-top: 30%;
+}
+
+.justify-center {
+    justify-content: center;
+}
+
+.bwhite{
+    background-color: white;
+    border-radius: 20px;
+}
+
+
+/* Header */
+
+.flexmenuparent{display: flex;
+}
+
+
+header{
+    position: fixed;
+    z-index: +1;
+    top: 0%;
+    background: linear-gradient(90deg, rgba(140,140,140,0.6965379901960784) 0%, rgba(140,140,140,0.5) 100%);
+    width: 100%;
+    height: 70px;
+    justify-content: center;
+}
+
+nav ul li a{
+    text-decoration: none;
+    list-style: none;
+    color: white;
+    font-size: 20px;
+    margin-right: 30px;
+}
+
+nav {
+    justify-content: space-between;
+    font-family: "jost";
+
+}
+
+a:hover{
+    color: #EB8221;
+}
+
+nav li{
+    list-style: none;
+    
+}
+
+nav ul{
+    flex-direction: row;
+    gap: 30px; 
+    margin-top:22px;
+}
+
+nav img{
+    width: 65px;
+    margin-top: 7px;
+    
+}
+
+/* Fin Header */
+
+/* Main */
+
+/* Matin Brun */
+
+h1{
+    margin-top: 30%;
+    color: white;
+    font-size: 300px;
+    text-shadow: 9px -25px 0px rgba(235,130,33,0.7);
+    font-weight: 50;
+}
+
+h1:hover{
+    color: #EB8221;
+    text-shadow: 9px -25px 0px rgba(235,235,235,0.7);
+}
+
+/* Fin Matin Brun */
+
+/* Page Livre 3D */
+
+.livre3D{
+
+   width: 500px ;
+   height: 500px;
+   margin-bottom: 10%;
+   display: flex;
+}
+
+.relatif{
+    position: relative;
+   
+}
+
+.resumetext{
+    text-align: center;
+    padding: 15%;
+    font-size: 1.3rem;
+    
+}
+
+.display-flex-enfant{
+    width: 45%;
+}
+
+.enfantimg{
+    position: absolute;
+    top: -195px;
+    right: 140px;
+    width: 250px;
+}
+
+/* Fin Page Livre 3D */
+
+/* Page Extrait */
+
+h2{
+    font-weight: 50;
+    font-size: 90px;
+}
+
+.extrait{
+    position: absolute;
+    top:-34px;
+    left: 5px;    
+}
+
+.extraittext{
+    text-align: center;
+    padding: 11%;
+    font-size: 1.3rem;
+    height: 600px;
+    width: 540px;
+    margin-top: 80px;     
+}
+
+.tete{
+    width: 150;  
+}
+
+.display-flex-extrait{
+margin-left: 90px;
+}
+
+/* Fin Page Extrait */
+
+/* Page de Franck Pavloff */
+
+.Franck{
+    width: 200px;
+    margin-left: 45%
+}
+
+.Photo{
+    width: 350px;
+    margin-left:34% ;
+    margin-top: 20px;
+}
+
+.borderpav{
+    border: 2px solid #D9D9D9;
+}
+
+.imfine{
+    position: absolute;
+    width: 280px;
+    top:-160px;
+    left:240px
+}
+
+.imsad{
+    position: absolute;
+    width: 280px;
+    top:-160px;
+    left:240px;
+    opacity: 0%;   
+}
+
+.imsad:hover{
+    opacity: 100%;
+    transition-duration: 450ms;
+}
+
+.textfine{
+    color: white;
+    position: absolute;
+    width: 500px;
+    padding: 20px;
+    font-size: 1.2rem;
+    top:430px;
+    left: 135px;
+    text-align: center;   
+}
+
+/* Fin page Franck Pavloff */
+
+/* Page chien */
+
+/* Scroll */
+
+.LIVRES{
+    margin-left: 38%;
+    margin-bottom: 20px;
+}
+
+.scroll{
+    width: 350px;
+    height: 630px;
+    overflow-y: scroll;
+    scroll-behavior: smooth;
+    margin-left: 33%;
+    border: 2px solid #D9D9D9;
+  }
+  
+  .scroll-page{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 75%;
+    color: white;
+  }
+
+/* Fin scroll */
+
+.chien{
+    position: absolute;
+    top:155px;
+    left:35px;
+    width: 600px;
+}
+
+/* Fin page chien */
+
+/* Logo et avis */
+
+.rating{
+    display: flex;
+    flex-direction: row-reverse;
+    position: absolute;
+    left: -115px;
+    top:600px  
+}
+
+.rating a {
+    float:right;
+    color: white;
+    text-decoration: none;
+    font-size: 4.5em;
+    transition: color .4s;
+ }
+
+ .rating a:hover,
+ .rating a:focus,
+ .rating a:hover ~ a,
+ .rating a:focus ~ a {
+    color: #EB8221;
+    cursor: pointer;
+ }
+
+.logo{
+    width: 120%;
+    margin-left: 49%;
+}
+
+.margin-logo{
+    margin-top: 15%;
+}
+/* Fin logo et avis */
+
+/* Fin Main */
+
+/* Footer */
+
+footer {
+    flex-shrink: 0;
+    border-top: 1px dashed black;
+    width: 100%;
+    background: white;
+    color: black;
+}
+.content-footer {
+    max-width: 1000px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    font-size: 16px;
+    padding: 50px 0 100px;
+}
+
+.bloc {
+    flex-basis: 20%;
+    margin: 0 30px;
+}
+
+.footer-site h3,
+.footer-edition h3,
+.footer-politique h3,
+.footer-contact h3 {
+    font-size: 22px;
+    padding-bottom: 20px;
+}
+
+.footer-contact p {
+    padding: 5px 0;
+}
+
+/* Liste */
+
+
+.footer-list {
+    list-style-type: none;
+}
+.footer-list li {
+    padding: 2px 0;
+}
+.footer-list a {
+    text-decoration: none;
+    color: black;
+}
+.footer-list a:hover {
+    color: #EB8221
+}
+
+/* Fin liste */
+
+
+/* Fin footer */
+
+@media screen and (max-width:1000px) {
+
+    .display-flex{
+        flex-direction: column;
+    }
+
+    .justify-center{
+        flex-direction: column;
+    }
+    
+    .flexmenuparent{
+        flex-direction: column;
+    }
+
+    nav a{
+        display: none;
+    }
+
+    
+    h1{
+        font-size:15rem;
+        text-shadow: 10px -10px 0px rgba(235,130,33,0.7);
+        margin-top: 250px;
+    }
+
+    h1:hover{
+        color: #EB8221;
+        text-shadow: 9px -10px 0px rgba(235,235,235,0.7);
+    }
+
+    .livre3D{
+        width: 500px;
+        height: 600px;
+        margin-left: 250px;
+    }
+
+    .display-flex-enfant{
+        width: 100%;
+        margin-top: 300px;
+    }
+
+    .tete{
+        width: 100%;
+        margin-top: -70px;
+    }
+
+    .display-flex-extrait{
+        margin: 0;
+        margin-top: 250px;
+    }
+
+    .extrait{
+        margin-left: 390px;
+    }
+
+    .extraittext{
+        width: 100%;
+        font-size: 1.3rem; 
+        height: 450px;
+        padding-top: 80px;
+          
+    }
+
+    .Photo{
+        margin: 70px;
+        margin-left: 325px;
+        margin-top: 20px;
+    }
+
+    .Franck{
+        margin-left: 400px;
+    }
+
+    .textfine{
+        top:-50px;
+        width: 100%;  
+    }
+
+    .borderpav{
+        width: 75%;
+    }
+
+    
+    .imfine {
+        display: none;
+    }
+    
+    .imsad{
+        display: none;
+    }
+
+    .LIVRES{
+        margin-left: 350px;
+
+    }
+    
+    .chien{
+        width: 340px;
+        margin-left: 300px;
+        margin-top: -60px;
+        
+    }
+
+    .logo{
+        width: 500px;
+        margin-top: 150px;
+        margin-left: 250px;
+
+    }
+
+    .rating{
+        display: none;
+    }
+
+   .footer-edition h3{
+    width: 50px;
+   }
+  
+    .content-footer{
+        width: 60%;
+        margin-left: 180px;
+        font-size: 1.3rem;
+        
+       
+    }
+
+    .footer-list{
+        margin-bottom: 40px;
+        margin-right: 65px;
+        
+    }
+}
+
+@media screen and (max-width:600px) {
+
+    .display-flex{
+        flex-direction: column;
+    }
+
+    .justify-center{
+        flex-direction: column;
+    }
+    
+    .flexmenuparent{
+        flex-direction: column;
+    }
+
+    nav a{
+        display:none;
+    }
+    
+    h1{
+        font-size:9rem;
+        text-shadow: 10px -10px 0px rgba(235,130,33,0.7);
+        margin-top: 250px;
+    }
+
+    h1:hover{
+        color: #EB8221;
+        text-shadow: 9px -10px 0px rgba(235,235,235,0.7);
+    }
+
+    .livre3D{
+        width: 500px;
+        margin-left: 0;
+    }
+
+    .display-flex-enfant{
+        width: 100%;
+        margin-top: 300px;
+    }
+
+    .tete{
+        width: 100%;
+        margin-top: -70px;
+    }
+
+    .display-flex-extrait{
+        margin: 0;
+        margin-top: 100px;
+        
+    }
+
+    .extrait{
+        margin-left: 150px;
+        
+    }
+
+    .extraittext{
+        width: 100%;
+        font-size: 1.2rem;
+        height: 600px;
+    }
+
+    .Photo{
+        margin: 70px;
+    }
+
+    .Franck{
+        margin-left: 150px;
+    }
+
+    .textfine{
+        top:-50px;
+        margin-left: -75px;
+        width: 100%;  
+    }
+
+    .borderpav{
+        width: 75%;
+    }
+
+    
+    .imfine {
+        display: none;
+    }
+    
+    .imsad{
+        display: none;
+    }
+
+    .LIVRES{
+        margin-left: 105px;
+
+    }
+
+    .scroll{
+        margin-left: 75px;
+    }
+    
+    .chien{
+        width: 340px;
+        margin-left: 30px;
+        margin-top: -60px;
+        
+    }
+
+    .logo{
+        width: 500px;
+        margin-top: 150px;
+        margin-left: 0;
+
+    }
+
+    .rating{
+        display: none;
+    }
+
+   .footer-edition h3{
+    width: 50px;
+   }
+  
+    .content-footer{
+        width: 60%;
+        flex-direction: column;
+        margin-left: 180px;
+        font-size: 1.3rem;
+       
+    }
+
+    .footer-list{
+        margin-bottom: 40px;
+        
+    }
+}
+
+
